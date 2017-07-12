@@ -41,13 +41,16 @@ GEM
     addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
     arel (8.0.0)
-    autoprefixer-rails (7.1.1.3)
+    autoprefixer-rails (7.1.2.2)
       execjs
-    bcrypt (3.1.11-x86-mingw32)
+    bcrypt (3.1.11)
+    bcrypt (3.1.11-x64-mingw32)
     bindex (0.5.0)
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
+    bootstrap-will_paginate (0.0.10)
+      will_paginate
     builder (3.2.3)
     byebug (9.0.6)
     capybara (2.14.4)
@@ -69,10 +72,12 @@ GEM
     concurrent-ruby (1.0.5)
     erubi (1.6.1)
     execjs (2.7.0)
+    ffi (1.9.18)
+    ffi (1.9.18-x64-mingw32)
     ffi (1.9.18-x86-mingw32)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
-    i18n (0.8.4)
+    i18n (0.8.6)
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
@@ -92,6 +97,10 @@ GEM
     minitest (5.10.2)
     multi_json (1.12.1)
     nio4r (2.1.0)
+    nokogiri (1.8.0)
+      mini_portile2 (~> 2.2.0)
+    nokogiri (1.8.0-x64-mingw32)
+      mini_portile2 (~> 2.2.0)
     nokogiri (1.8.0-x86-mingw32)
       mini_portile2 (~> 2.2.0)
     public_suffix (2.0.5)
@@ -124,7 +133,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (12.0.0)
     rubyzip (1.2.1)
-    sass (3.4.24)
+    sass (3.4.25)
     sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
       sass (~> 3.1)
@@ -141,6 +150,8 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    sqlite3 (1.3.13)
+    sqlite3 (1.3.13-x64-mingw32)
     sqlite3 (1.3.13-x86-mingw32)
     thor (0.19.4)
     thread_safe (0.3.6)
@@ -162,15 +173,19 @@ GEM
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
+    will_paginate (3.1.0)
     xpath (2.1.0)
       nokogiri (~> 1.3)
 
 PLATFORMS
+  ruby
+  x64-mingw32
   x86-mingw32
 
 DEPENDENCIES
   bcrypt (~> 3.1.11)
   bootstrap-sass (~> 3.3.6)
+  bootstrap-will_paginate
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
@@ -185,6 +200,7 @@ DEPENDENCIES
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
+  will_paginate
 
 BUNDLED WITH
    1.15.1
